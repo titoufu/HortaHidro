@@ -19,5 +19,7 @@
         <!-- Divider color -->
         <item name="colorControlNormal">@color/teal_200</item>
     </style>
-
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>

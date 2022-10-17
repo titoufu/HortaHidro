@@ -12,13 +12,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class RelatoAdapter extends RecyclerView.Adapter<RelatoAdapter.ViewHolder> {
+public class AdapterDiasNaEngorda extends RecyclerView.Adapter<AdapterDiasNaEngorda.ViewHolder> {
     // creating variables for our ArrayList and context
     private ArrayList<HortaHidro> hortaHidroArrayList;
 
     // creating constructor for our adapter class
 
-    public RelatoAdapter(ArrayList<HortaHidro> hortaHidroArrayList) {
+    public AdapterDiasNaEngorda(ArrayList<HortaHidro> hortaHidroArrayList) {
         this.hortaHidroArrayList = hortaHidroArrayList;
     }
 

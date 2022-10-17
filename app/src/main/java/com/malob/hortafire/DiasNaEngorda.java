@@ -29,7 +29,7 @@ import java.util.Date;
 public class DiasNaEngorda extends AppCompatActivity {
     ArrayList<HortaHidro> hortaHidroArrayList;
     RecyclerView recyclerView;
-    RelatoAdapter relatoAdapter;
+    AdapterDiasNaEngorda relatoAdapter;
     FirebaseFirestore db;
     ProgressDialog progressDialog;
     String hortalicaSelecionada = "Alface";
@@ -58,7 +58,7 @@ public class DiasNaEngorda extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         hortaHidroArrayList = new ArrayList<HortaHidro>();
-        relatoAdapter = new RelatoAdapter(hortaHidroArrayList);
+        relatoAdapter = new AdapterDiasNaEngorda(hortaHidroArrayList);
         recyclerView.setAdapter(relatoAdapter);
         EventChangeListenerx(hortalicaSelecionada);
         if (progressDialog.isShowing()) progressDialog.dismiss();

@@ -11,12 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+public class AdapterDatasDosEventos extends RecyclerView.Adapter<AdapterDatasDosEventos.MyViewHolder> {
 
     Context context;
     ArrayList<HortaHidro> hidroArrayList;
 
-    public MyAdapter(Context context, ArrayList<HortaHidro> hidroArrayList) {
+    public AdapterDatasDosEventos(Context context, ArrayList<HortaHidro> hidroArrayList) {
         this.context = context;
         this.hidroArrayList = hidroArrayList;
     }

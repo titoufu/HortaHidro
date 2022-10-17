@@ -25,7 +25,7 @@ public class DatasDosEventos extends AppCompatActivity {
 
     RecyclerView recyclerView;
     ArrayList<HortaHidro> hortaArrayList;
-    MyAdapter myAdapter;
+    AdapterDatasDosEventos adapterDatasDosEventos;
     FirebaseFirestore db;
     String hortalicaSelecionada = "Alface";
 
@@ -51,8 +51,8 @@ public class DatasDosEventos extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
         hortaArrayList = new ArrayList<>();
 
-        myAdapter = new MyAdapter(DatasDosEventos.this, hortaArrayList);
-        recyclerView.setAdapter(myAdapter);
+        adapterDatasDosEventos = new AdapterDatasDosEventos(DatasDosEventos.this, hortaArrayList);
+        recyclerView.setAdapter(adapterDatasDosEventos);
 
         EventChangeListenerx("Alface");
         if (progressDialog.isShowing()) progressDialog.dismiss();
@@ -117,7 +117,7 @@ public class DatasDosEventos extends AppCompatActivity {
                         } else {
                             Log.d("TAG", "Error getting documents: ", task.getException());
                         }
-                        recyclerView.setAdapter(myAdapter);
+                        recyclerView.setAdapter(adapterDatasDosEventos);
                     }
                 });
     }
