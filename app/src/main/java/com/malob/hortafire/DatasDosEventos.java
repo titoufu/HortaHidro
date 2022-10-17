@@ -13,33 +13,26 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.malob.hortafire.hortalica.HortaHidro;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
-public class RelatoGeral extends AppCompatActivity {
-    ArrayList<HortaHidro> hortaHidroArrayList;
+public class DatasDosEventos extends AppCompatActivity {
+
     RecyclerView recyclerView;
-    RelatoAdapter relatoAdapter;
+    ArrayList<HortaHidro> hortaArrayList;
+    MyAdapter myAdapter;
     FirebaseFirestore db;
-    ProgressDialog progressDialog;
     String hortalicaSelecionada = "Alface";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_relato_geral);
-
+        setContentView(R.layout.activity_datas_dos_eventos);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -51,18 +44,19 @@ public class RelatoGeral extends AppCompatActivity {
         progressDialog.setCancelable(false);
         progressDialog.setMessage("Buscando dados ...");
         progressDialog.show();
-
-        db = FirebaseFirestore.getInstance();
-        // escolhendo o item selecionado no menu
-
-        recyclerView = findViewById(R.id.relato_recycler);
+        recyclerView = findViewById(R.id.id_recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        hortaHidroArrayList = new ArrayList<HortaHidro>();
-        relatoAdapter = new RelatoAdapter(hortaHidroArrayList);
-        recyclerView.setAdapter(relatoAdapter);
-        EventChangeListenerx(hortalicaSelecionada);
+
+        db = FirebaseFirestore.getInstance();
+        hortaArrayList = new ArrayList<>();
+
+        myAdapter = new MyAdapter(DatasDosEventos.this, hortaArrayList);
+        recyclerView.setAdapter(myAdapter);
+
+        EventChangeListenerx("Alface");
         if (progressDialog.isShowing()) progressDialog.dismiss();
+
 
     }
 
@@ -101,7 +95,7 @@ public class RelatoGeral extends AppCompatActivity {
     }
 
     private void EventChangeListenerx(String hortalicaSelecionada) {
-        hortaHidroArrayList.clear();
+        hortaArrayList.clear();
         db.collection(hortalicaSelecionada)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -109,43 +103,21 @@ public class RelatoGeral extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                TrataDados(hortalicaSelecionada, document.getId(), document.get("Data da Engorda").toString());
-                                //Log.d("TAG", document.getId() + " => " + document.get("Data da Engorda"));
+                                HortaHidro qst = new HortaHidro();
+                                qst.setHortalica(hortalicaSelecionada);
+                                qst.setLote(document.getId().substring(6, 7));
+                                qst.setDataSemear(document.get("Data da Semeadura").toString());
+                                qst.setDataGerminar(document.get("Data da Germinação").toString());
+                                qst.setDataBerco(document.get("Data do Berçário").toString());
+                                qst.setDataEngorda(document.get("Data da Engorda").toString());
+                                //  TrataDados(hortalicaSelecionada, document.getId(), document.get("Data da Engorda").toString());
+                                //   Log.d("TAG", document.getId() + " => " + qst.toString());
+                                hortaArrayList.add(qst);
                             }
                         } else {
                             Log.d("TAG", "Error getting documents: ", task.getException());
                         }
-                        recyclerView.setAdapter(relatoAdapter);
-                    }
-
-                    private void TrataDados(String tipoHortalica, String tipoLote, String dataE) {
-                        HortaHidro hortalica = new HortaHidro();
-                        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-                        String currentDate = sdf.format(new Date());
-                        String ref = "DD/MM/AAAA";
-                        long diasNaEngorda = 0;
-                        long conversao = 24 * 60 * 60 * 1000;
-                        String data_semeia = ref, data_germina = ref, data_berco = ref, data_engorda = ref;
-                        if (dataE.equals(ref)) {
-                            data_engorda = "01/01/3000";
-                        } else {
-                            data_engorda = dataE;
-                        }
-                        try {
-                            Date date3 = sdf.parse(data_engorda);
-                            Date date4 = sdf.parse(currentDate);
-                            diasNaEngorda = (date4.getTime() - date3.getTime()) / conversao;
-                        } catch (ParseException e) {
-                            Log.i("Erro", "FragVendasMain-linha 120");
-                        }
-                        if (diasNaEngorda < 0) diasNaEngorda = 0;
-                        else {
-                            hortalica.setHortalica(tipoHortalica);
-                            hortalica.setLote(tipoLote.substring(6, 7));
-                            hortalica.setDataEngorda(dataE);
-                            hortalica.setTempoEngorda((int) diasNaEngorda);
-                            hortaHidroArrayList.add(hortalica);
-                        }
+                        recyclerView.setAdapter(myAdapter);
                     }
                 });
     }

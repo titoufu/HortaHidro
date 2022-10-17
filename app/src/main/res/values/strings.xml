@@ -5,8 +5,10 @@
     <string name="email_do_lar">le.maia.lobato@gmail.com</string>
 
     <string name="rel_geral">Hortaliças em fase Final</string>
-
     <string name="rel_indiv">Relatório Individual</string>
+    <string name="rel_datas_eventos">Relatório Geral</string>
+
+
     <string name="nossa_missao">Nossa Missão: Contribuir para que o Lar Espírita Maria Lobato de Freitas
         cumpra a sua missão, auferindo para isso recursos financeiros por meio da
         produção e comércio de hortaliças hidropônicas.</string>

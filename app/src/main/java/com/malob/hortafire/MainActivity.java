@@ -54,13 +54,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new Engordar();
                 break;
             case R.id.nav_diasEngorda:
-                intent = new Intent(this, RelatoGeral.class);
+                intent = new Intent(this, DiasNaEngorda.class);
                 break;
             case R.id.nav_grafico:
-                intent = new Intent(this, RelatoInd.class);
+                intent = new Intent(this, GraficoIndividualizado.class);
                 break;
             case R.id.nav_dataEventos:
-                intent = new Intent(this, RelatoInd.class);
+                intent = new Intent(this, DatasDosEventos.class);
                 break;
             case R.id.nav_missao:
                 fragment = new Missao();

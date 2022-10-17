@@ -1,4 +1,4 @@
-package com.malob.hortafire.hortalica;
+package com.malob.hortafire;
 
 public class HortaHidro {
     private String hortalica, lote, dataSemear, dataGerminar, dataBerco, dataEngorda;

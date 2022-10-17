@@ -10,8 +10,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.malob.hortafire.hortalica.HortaHidro;
-
 import java.util.ArrayList;
 
 public class RelatoAdapter extends RecyclerView.Adapter<RelatoAdapter.ViewHolder> {

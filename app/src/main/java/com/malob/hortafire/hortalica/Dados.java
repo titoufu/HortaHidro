@@ -1,6 +1,6 @@
 package com.malob.hortafire.hortalica;
 
-import com.malob.hortafire.hortalica.HortaHidro;
+import com.malob.hortafire.HortaHidro;
 
 import java.util.ArrayList;
 
