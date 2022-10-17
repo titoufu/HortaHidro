@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MALOB Hidroponia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_do_lar">le.maia.lobato@gmail.com</string>
+
+    <string name="rel_geral">Hortaliças em fase Final</string>
+
+    <string name="rel_indiv">Relatório Individual</string>
+    <string name="nossa_missao">Nossa Missão: Contribuir para que o Lar Espírita Maria Lobato de Freitas
+        cumpra a sua missão, auferindo para isso recursos financeiros por meio da
+        produção e comércio de hortaliças hidropônicas.</string>
+    <string name="nossa_meta">Ser uma referência em Uberlândia na produção de
+        hortaliças hidropônicas, como instrumento de geração de recursos finaceiros para ações de assistência e desenvolvimento social.</string>
+    <string name="nav_semear">Semear</string>
+    <string name="nav_germinar">Germinar</string>
+    <string name="nav_adolescer">Adolescer</string>
+    <string name="nav_engordar">Engordar</string>
+    <string name="nav_relatorio">Relatórios</string>
+    <string name="nav_grafico">Gráfico Individualizado </string>
+    <string name="nav_diasEngorda">Dias na Engorda</string>
+    <string name="nav_dataEventos">Datas de Eventos</string>
+    <string name="nav_open_drawer">Open Navigation Drawer</string>
+    <string name="nav_planejamento">Planejamento </string>
+    <string name="nav_meta">Nossa Meta </string>
+    <string name="nav_missao">Nossa Missão </string>
+    <string name="nav_close_drawer">Close Navigation Drawer</string>
+
+    <string-array name="Hortalica">
+        <item>Alface</item>
+        <item>Rúcula</item>
+        <item>Salsa</item>
+        <item>Agrião</item>
+        <item>Outra</item>
+    </string-array>
+    <string-array name="Lote">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+    </string-array>
+</resources>

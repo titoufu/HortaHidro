@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/drawable/botao_redondo.xml" value="0.3635" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_grafico_individual.xml" value="0.2359375" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_help.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_relato_geral.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_relato_ind.xml" value="0.22" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_relato_vendas.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_relato_vendas_details.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_relato_vendas_v.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_teste.xml" value="0.11822916666666666" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/card_captioned_image.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/card_relato_geral.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/card_relato_geralreserva.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_adolescer.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_engordar.xml" value="0.5" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_germinar.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_grafico_individual_sec.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_main_individual.xml" value="0.36268890046899427" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_meta.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_missao.xml" value="0.22" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_rel_ind_main.xml" value="0.345125786163522" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_rel_ind_sec.xml" value="0.22876498176133403" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_rel_vendas_main.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_rel_vendas_sec.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_rela_geral.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_rela_indiv.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_relato_lote.xml" value="0.2390625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_relato_lote_graf.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_relato_lote_sel.xml" value="0.22" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_semear.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/item.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/nav_header.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/teste.xml" value="0.1" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/toolbar_main.xml" value="0.2" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/menu/menu_main.xml" value="0.33" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/menu/menu_nav.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.323" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.323" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="4dp"
+    android:paddingStart="5dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/germina" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_TxtHortalica"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:gravity="center_horizontal|center_vertical|end"
+                android:text="Hortaliça:" />
+
+            <TextView
+                android:id="@+id/id_TxtLote"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:gravity="center_horizontal|center_vertical|end"
+                android:padding="3dp"
+                android:text="Lote:" />
+
+            <TextView
+                android:id="@+id/id_TxtHortaDiasEngorda"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:gravity="center_horizontal|center_vertical|end"
+                android:text="Dias na Engorda:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_ValorHorta"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:gravity="start|center_horizontal|center_vertical"
+                android:paddingStart="5dp"
+                android:text="Alface" />
+
+            <TextView
+                android:id="@+id/id_ValorLote"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:gravity="start|center_horizontal|center_vertical"
+                android:paddingStart="5dp"
+                android:text="A" />
+
+            <TextView
+                android:id="@+id/id_ValorDiasEngorda"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:gravity="start|center_horizontal|center_vertical"
+                android:paddingStart="5dp"
+                android:text="55" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

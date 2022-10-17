@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "890536105731",
+    "project_id": "xxxx-4704d",
+    "storage_bucket": "xxxx-4704d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890536105731:android:e1a96c82db4280aa9c3b36",
+        "android_client_info": {
+          "package_name": "com.malob.firecloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890536105731-lvv32nl27ngu23n8v9otc15c46lqoi7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxidyVF6K5iGYVVWnCiG8-EvlU0gwL4Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890536105731-lvv32nl27ngu23n8v9otc15c46lqoi7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890536105731:android:98e2730b641e5ae69c3b36",
+        "android_client_info": {
+          "package_name": "com.malob.hortafire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890536105731-lvv32nl27ngu23n8v9otc15c46lqoi7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxidyVF6K5iGYVVWnCiG8-EvlU0gwL4Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890536105731-lvv32nl27ngu23n8v9otc15c46lqoi7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

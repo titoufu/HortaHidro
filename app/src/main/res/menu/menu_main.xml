@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/id_menu_alface"
+        android:label="@string/rel_geral"
+        android:orderInCategory="1"
+        android:title="Alface"
+        app:showAsAction="never"/>
+
+    app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/id_menu_rucula"
+        android:label="@string/rel_geral"
+        android:orderInCategory="2"
+        android:title="Rúcula"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/id_menu_salsa"
+        android:label="@string/rel_geral"
+        android:orderInCategory="3"
+        android:title="Salsa"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/id_menu_agrião"
+        android:label="@string/rel_geral"
+        android:orderInCategory="4"
+        android:title="Agrião"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/id_menu_outros"
+        android:label="@string/rel_geral"
+        android:orderInCategory="5"
+        android:title="Outros"
+        app:showAsAction="never"/>
+</menu>

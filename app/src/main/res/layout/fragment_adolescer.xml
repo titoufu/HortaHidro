@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adolescer">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/hortalica_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="HORTALIÇA:"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/lote_txt"
+        app:layout_constraintTop_toTopOf="@+id/id_spinnerHortalica" />
+
+    <Spinner
+        android:id="@+id/id_spinnerHortalica"
+        android:layout_width="87dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:entries="@array/Hortalica"
+        android:gravity="start"
+        android:minHeight="48dp"
+        android:popupElevation="10dp"
+        android:textAlignment="textStart"
+        android:textSize="5sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_spinnerLote"
+        app:layout_constraintStart_toStartOf="@+id/id_spinnerLote"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/lote_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOTE:"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/plantio_txt"
+        app:layout_constraintTop_toTopOf="@+id/id_spinnerLote" />
+
+    <Spinner
+        android:id="@+id/id_spinnerLote"
+        android:layout_width="87dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:entries="@array/Lote"
+        android:gravity="start"
+        android:minHeight="48dp"
+        android:popupElevation="10dp"
+        android:textAlignment="textStart"
+        android:textSize="5sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_dataSemear"
+        app:layout_constraintStart_toStartOf="@+id/id_dataSemear"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/id_referencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:text="1234"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <DatePicker
+
+        android:id="@+id/id_datePicker"
+        android:layout_width="259dp"
+        android:layout_height="153dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:theme="@style/PickerEditText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_referencia"
+        app:layout_constraintVertical_bias="0.592"
+        tools:ignore="MissingConstraints">
+
+    </DatePicker>
+
+    <Button
+        android:id="@+id/id_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:elevation="5dp"
+        android:onClick="salvar"
+        android:text="Salvar"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/plantio_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATA DO PLANTIO:"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/id_referencia"
+        app:layout_constraintTop_toTopOf="@+id/id_referencia" />
+
+    <TextView
+        android:id="@+id/germina_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DATA  GERMINAÇÃO:"
+        app:layout_constraintEnd_toEndOf="@+id/plantio_txt"
+        app:layout_constraintTop_toBottomOf="@+id/plantio_txt" />
+
+    <TextView
+        android:id="@+id/berco_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DATA DO BERÇÁRIO:"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/germina_txt"
+        app:layout_constraintTop_toBottomOf="@+id/germina_txt" />
+
+    <TextView
+        android:id="@+id/engorda_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DATA DA ENGORDA:"
+        app:layout_constraintEnd_toEndOf="@+id/berco_txt"
+        app:layout_constraintTop_toBottomOf="@+id/berco_txt" />
+
+    <TextView
+        android:id="@+id/id_dataSemear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIA MES ANO"
+        app:layout_constraintStart_toEndOf="@+id/id_referencia"
+        app:layout_constraintTop_toTopOf="@+id/id_referencia" />
+
+    <TextView
+        android:id="@+id/id_dataGerminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DIA MES ANO"
+        app:layout_constraintStart_toStartOf="@+id/id_dataSemear"
+        app:layout_constraintTop_toBottomOf="@+id/id_dataSemear" />
+
+    <TextView
+        android:id="@+id/id_dataBerco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DIA MES ANO"
+        app:layout_constraintStart_toStartOf="@+id/id_dataGerminar"
+        app:layout_constraintTop_toBottomOf="@+id/id_dataGerminar" />
+
+    <TextView
+        android:id="@+id/id_dataEngorda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DIA MES ANO"
+        app:layout_constraintStart_toStartOf="@+id/id_dataBerco"
+        app:layout_constraintTop_toBottomOf="@+id/id_dataBerco" />
+</androidx.constraintlayout.widget.ConstraintLayout>
