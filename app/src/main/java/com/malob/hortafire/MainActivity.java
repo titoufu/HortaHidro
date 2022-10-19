@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Fragment fragment = null;
         Intent intent = new Intent();
         switch (id) {
+/*            case R.id.nav_semear:
+                fragment = new Semear()r();
+                break;
             case R.id.nav_germinar:
                 fragment = new Germinar();
                 break;
@@ -53,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_engordar:
                 fragment = new Engordar();
                 break;
+
+ */
             case R.id.nav_diasEngorda:
                 intent = new Intent(this, DiasNaEngorda.class);
                 break;
@@ -62,6 +67,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_dataEventos:
                 intent = new Intent(this, DatasDosEventos.class);
                 break;
+            case R.id.nav_nutricao:
+                intent = new Intent(this, Hortinutri.class);
+                break;
             case R.id.nav_missao:
                 fragment = new Missao();
                 break;
@@ -69,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new Meta();
                 break;
             default:
-                fragment = new Semear();
+                fragment = new Missao();
         }
         if (fragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();

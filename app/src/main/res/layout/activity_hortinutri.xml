@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/costela"
+    android:backgroundTintMode="multiply"
+    android:hapticFeedbackEnabled="true"
+    android:textAlignment="center"
+    tools:context=".Hortinutri">
+
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_buttonCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+            <TextView
+                android:id="@+id/id_TxtCapacidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0"
+                android:text="Capacidade [litros]:"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/id_spinnerCapac"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:scrollbarSize="20dp"
+                android:scrollbarStyle="insideInset"
+                android:textAlignment="textStart"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/id_TxtHortalica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Hortaliça"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="Text" />
+
+            <Spinner
+                android:id="@+id/id_spinnerHortalica"
+                style="@style/SpinnerPersonalizado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:scrollbarSize="20dp"
+                android:scrollbarStyle="insideInset"
+                android:textAlignment="textStart"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/Id_TxtValorMedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/eletrocontudividade"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                android:visibility="invisible"/>
+
+            <Spinner
+                android:id="@+id/id_spinnerValorMedido"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:scrollbarSize="20dp"
+                android:scrollbarStyle="insideInset"
+                android:textAlignment="textStart"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/id_buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calculaNutrientes"
+        android:text="CALCULAR"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <TextView
+        android:id="@+id/Id_Txtnutr1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:text="HidrogoodFert:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/id_buttonCalcular" />
+
+    <TextView
+        android:id="@+id/id_TxtValorNutr01"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="NC"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/Id_Txtnutr1" />
+
+    <TextView
+        android:id="@+id/id_TxtValorNutr02"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="NC"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/id_TxtValorNutr01"
+        app:layout_constraintTop_toTopOf="@+id/Id_Txtnutr3" />
+
+    <TextView
+        android:id="@+id/id_TxtValorNutr03"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="NC"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/id_TxtValorNutr02"
+        app:layout_constraintTop_toTopOf="@+id/Id_Txtnutr2" />
+
+    <TextView
+        android:id="@+id/Id_Txtnutr2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:text="Ferro EDDHA:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Id_Txtnutr3"
+        app:layout_constraintTop_toBottomOf="@+id/Id_Txtnutr3" />
+
+    <TextView
+        android:id="@+id/Id_Txtnutr3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:text="Nitrato de Cálcio:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Id_Txtnutr1"
+        app:layout_constraintTop_toBottomOf="@+id/Id_Txtnutr1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+</androidx.constraintlayout.widget.ConstraintLayout>

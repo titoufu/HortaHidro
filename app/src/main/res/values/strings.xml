@@ -8,7 +8,7 @@
     <string name="rel_indiv">Relatório Individual</string>
     <string name="rel_datas_eventos">Relatório Geral</string>
 
-
+    <string name="eletrocontudividade">Ec [μs/cm]</string>
     <string name="nossa_missao">Nossa Missão: Contribuir para que o Lar Espírita Maria Lobato de Freitas
         cumpra a sua missão, auferindo para isso recursos financeiros por meio da
         produção e comércio de hortaliças hidropônicas.</string>
@@ -27,6 +27,7 @@
     <string name="nav_meta">Nossa Meta </string>
     <string name="nav_missao">Nossa Missão </string>
     <string name="nav_close_drawer">Close Navigation Drawer</string>
+    <string name="nav_nutricao">Nutrição</string>
 
     <string-array name="Hortalica">
         <item>Alface</item>
@@ -46,4 +47,34 @@
         <item>H</item>
         <item>I</item>
     </string-array>
+    <string-array name="Capacidade">
+        <item>1000</item>
+        <item>900</item>
+        <item>800</item>
+        <item>700</item>
+        <item>600</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="EcMedido">
+        <item>0.0</item>
+        <item>0.1</item>
+        <item>0.2</item>
+        <item>0.3</item>
+        <item>0.4</item>
+        <item>0.5</item>
+        <item>0.6</item>
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>1.2</item>
+        <item>1.3</item>
+        <item>1.4</item>
+        <item>1.5</item>
+        <item>1.6</item>
+        <item>1.7</item>
+        <item>1.8</item>
+    </string-array>
+
 </resources>

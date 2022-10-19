@@ -24,4 +24,9 @@
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@style/TextAppearance.AppCompat">
         <item name="android:textColor">@color/white</item>
     </style>
+    <style name="SpinnerPersonalizado" >
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
 </resources>

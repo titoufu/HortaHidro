@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/drawable/botao_redondo.xml" value="0.3635" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_grafico_individual.xml" value="0.2359375" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_grafico_individualizado.xml" value="0.3625" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_help.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_hortinutri.xml" value="0.3625" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_relato_eventos.xml" value="0.3625" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/activity_relato_geral.xml" value="0.3625" />
@@ -36,6 +38,7 @@
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/fragment_semear.xml" value="0.14722222222222223" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/item.xml" value="0.3625" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/nav_header.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/spinner_item.xml" value="0.3625" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/teste.xml" value="0.1" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/layout/toolbar_main.xml" value="0.2" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/menu/menu_main.xml" value="0.33" />

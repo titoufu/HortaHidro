@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/nav_planejamento">
+        <menu>
+            <item
+                android:id="@+id/nav_missao"
+                android:icon="?attr/actionModePasteDrawable"
+                android:title="@string/nav_missao" />
+            <item
+                android:id="@+id/nav_meta"
+                android:icon="@drawable/meta"
+                android:title="@string/nav_meta" />
+        </menu>
+    </item>
+    <item android:title="@string/nav_relatorio">
+        <menu>
+            <item
+                android:id="@+id/nav_dataEventos"
+                android:icon="@drawable/relato_geral"
+                android:title="@string/nav_dataEventos" />
+            <item
+                android:id="@+id/nav_grafico"
+                android:icon="@drawable/grafico_de_barras"
+                android:title="@string/nav_grafico" />
+            <item
+                android:id="@+id/nav_diasEngorda"
+                android:icon="@drawable/calendar"
+                android:title="@string/nav_diasEngorda" />
+        </menu>
+    </item>
+    <item android:title="@string/nav_nutricao">
+        <menu>
+            <item
+                android:id="@+id/nav_nutricao"
+                android:icon="@drawable/dieta2"
+                android:title="@string/nav_nutricao" />
+         </menu>
+    </item>
+
+    <!--
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_semear"
@@ -19,33 +57,6 @@
             android:icon="@drawable/fat3"
             android:title="@string/nav_engordar" />
     </group>
-    <item android:title="@string/nav_relatorio">
-        <menu>
-            <item
-                android:id="@+id/nav_dataEventos"
-                android:icon="@drawable/relato_geral"
-                android:title="@string/nav_dataEventos" />
-            <item
-                android:id="@+id/nav_grafico"
-                android:icon="@drawable/grafico_de_barras"
-                android:title="@string/nav_grafico" />
-            <item
-                android:id="@+id/nav_diasEngorda"
-                android:icon="@drawable/calendar"
-                android:title="@string/nav_diasEngorda" />
-        </menu>
-    </item>
-    <item android:title="@string/nav_planejamento">
-        <menu>
-            <item
-                android:id="@+id/nav_missao"
-                android:icon="?attr/actionModePasteDrawable"
-                android:title="@string/nav_missao" />
-            <item
-                android:id="@+id/nav_meta"
-                android:icon="@drawable/meta"
-                android:title="@string/nav_meta" />
-        </menu>
-    </item>
+-->
 
 </menu>
