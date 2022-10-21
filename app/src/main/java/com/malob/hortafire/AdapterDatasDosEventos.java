@@ -25,7 +25,7 @@ public class AdapterDatasDosEventos extends RecyclerView.Adapter<AdapterDatasDos
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View v = LayoutInflater.from(context).inflate(R.layout.item, parent, false);
+        View v = LayoutInflater.from(context).inflate(R.layout.card_datas_dos_eventos, parent, false);
         return new MyViewHolder(v);
     }
 

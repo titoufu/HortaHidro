@@ -71,12 +71,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 intent = new Intent(this, Hortinutri.class);
                 break;
             case R.id.nav_missao:
+                setTitle("Nossa Missão");
                 fragment = new Missao();
                 break;
             case R.id.nav_meta:
+                setTitle("Nossa Meta");
                 fragment = new Meta();
                 break;
             default:
+                setTitle("Nossa Missão");
                 fragment = new Missao();
         }
         if (fragment != null) {

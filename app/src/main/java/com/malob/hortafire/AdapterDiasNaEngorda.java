@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -26,7 +27,7 @@ public class AdapterDiasNaEngorda extends RecyclerView.Adapter<AdapterDiasNaEngo
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View listItem = layoutInflater.inflate(R.layout.card_relato_geral, parent, false);
+        View listItem = layoutInflater.inflate(R.layout.card_dias_na_engorda, parent, false);
         ViewHolder viewHolder = new ViewHolder(listItem);
         return viewHolder;
     }
@@ -37,7 +38,8 @@ public class AdapterDiasNaEngorda extends RecyclerView.Adapter<AdapterDiasNaEngo
         holder.tipohortalica.setText(hortaHidro.getHortalica());
         holder.tipoLote.setText(hortaHidro.getLote());
         holder.tempoEngorda.setText(String.valueOf(hortaHidro.getTempoEngorda()));
-        Log.i("TAG",hortaHidro.getHortalica()+"  position:"+String.valueOf(position));
+        holder.imageHortalica.setImageResource(hortaHidro.getImagemHortalica());
+      //  Log.i("TAGX",String.valueOf(hortaHidro.getImagemHortalica())+"  position:"+String.valueOf(position));
     }
 
     @Override
@@ -50,6 +52,7 @@ public class AdapterDiasNaEngorda extends RecyclerView.Adapter<AdapterDiasNaEngo
         private final TextView tipohortalica;
         private final TextView tipoLote;
         private final TextView tempoEngorda;
+        private final ImageView imageHortalica;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -57,6 +60,7 @@ public class AdapterDiasNaEngorda extends RecyclerView.Adapter<AdapterDiasNaEngo
             tipohortalica = (TextView) itemView.findViewById(R.id.id_ValorHorta);
             tipoLote = (TextView) itemView.findViewById(R.id.id_ValorLote);
             tempoEngorda = (TextView) itemView.findViewById(R.id.id_ValorDiasEngorda);
+            imageHortalica=(ImageView) itemView.findViewById(R.id.id_image_dias_engorda);
         }
     }
 }

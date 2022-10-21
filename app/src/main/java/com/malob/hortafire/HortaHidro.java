@@ -3,17 +3,20 @@ package com.malob.hortafire;
 public class HortaHidro {
     private String hortalica, lote, dataSemear, dataGerminar, dataBerco, dataEngorda;
     private int tempoEngorda;
-    public HortaHidro(String hortalica, String lote, String dataSemear, String dataGerminar, String dataBerco, String dataEngorda,int tempoEngorda) {
+    private int imagemHortalica;
+
+    public HortaHidro(String hortalica, String lote, String dataSemear, String dataGerminar, String dataBerco, String dataEngorda, int tempoEngorda, int imagemHortalica) {
         this.hortalica = hortalica;
         this.lote = lote;
         this.dataSemear = dataSemear;
         this.dataGerminar = dataGerminar;
         this.dataBerco = dataBerco;
         this.dataEngorda = dataEngorda;
-        this.tempoEngorda=tempoEngorda;
+        this.tempoEngorda = tempoEngorda;
+        this.imagemHortalica = imagemHortalica;
     }
-    public HortaHidro() {
 
+    public HortaHidro() {
     }
 
     public String getHortalica() {
@@ -64,7 +67,19 @@ public class HortaHidro {
         this.dataEngorda = dataEngorda;
     }
 
-    public int getTempoEngorda() {return tempoEngorda;}
+    public int getTempoEngorda() {
+        return tempoEngorda;
+    }
 
-    public void setTempoEngorda(int tempoEngorda) {this.tempoEngorda = tempoEngorda;}
+    public void setTempoEngorda(int tempoEngorda) {
+        this.tempoEngorda = tempoEngorda;
+    }
+
+    public int getImagemHortalica() {
+        return imagemHortalica;
+    }
+
+    public void setImagemHortalica(int imagemHortalica) {
+        this.imagemHortalica = imagemHortalica;
+    }
 }

@@ -4,14 +4,14 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="70dp"
-    android:layout_margin="4dp"
-    android:paddingStart="5dp"
-    app:cardCornerRadius="4dp"
-    app:cardElevation="2dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
+    app:layout_constraintTop_toTopOf="parent"
+    android:paddingStart="5dp"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
 
 
     <LinearLayout
@@ -21,7 +21,7 @@
         android:weightSum="100">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/id_image_dias_engorda"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="30"

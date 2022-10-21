@@ -8,4 +8,5 @@
     <color name="red">#FF800000</color>
     <color name="error">#FFFF0000</color>
     <color name="calculado">#FF008000</color>
+    <color name="fundo_card">#080E06</color>
 </resources>

@@ -31,6 +31,6 @@
         android:id="@+id/id_menu_outros"
         android:label="@string/rel_geral"
         android:orderInCategory="5"
-        android:title="Outros"
+        android:title="Outra"
         app:showAsAction="never"/>
 </menu>

@@ -33,6 +33,7 @@ public class DiasNaEngorda extends AppCompatActivity {
     FirebaseFirestore db;
     ProgressDialog progressDialog;
     String hortalicaSelecionada = "Alface";
+    HortaHidro hortaHidro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -143,6 +144,17 @@ public class DiasNaEngorda extends AppCompatActivity {
                             hortalica.setLote(tipoLote.substring(6, 7));
                             hortalica.setDataEngorda(dataE);
                             hortalica.setTempoEngorda((int) diasNaEngorda);
+
+                            if (hortalicaSelecionada.equals("Alface"))
+                                hortalica.setImagemHortalica(R.drawable.im_alface);
+                            else if (hortalicaSelecionada.equals("Agrião"))
+                                hortalica.setImagemHortalica(R.drawable.im_agriao);
+                            else if (hortalicaSelecionada.equals("Salsa"))
+                                hortalica.setImagemHortalica(R.drawable.im_salsa);
+                            else if (hortalicaSelecionada.equals("Outra"))
+                                hortalica.setImagemHortalica(R.drawable.im_couve);
+                            else if (hortalicaSelecionada.equals("Rúcula"))
+                                hortalica.setImagemHortalica(R.drawable.im_rucula);
                             hortaHidroArrayList.add(hortalica);
                         }
                     }

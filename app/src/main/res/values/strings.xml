@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">MALOB Hidroponia</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="email_do_lar">le.maia.lobato@gmail.com</string>
 
     <string name="rel_geral">Hortaliças em fase Final</string>
     <string name="rel_indiv">Relatório Individual</string>
-    <string name="rel_datas_eventos">Relatório Geral</string>
 
     <string name="eletrocontudividade">Ec [μs/cm]</string>
     <string name="nossa_missao">Nossa Missão: Contribuir para que o Lar Espírita Maria Lobato de Freitas
@@ -14,10 +12,6 @@
         produção e comércio de hortaliças hidropônicas.</string>
     <string name="nossa_meta">Ser uma referência em Uberlândia na produção de
         hortaliças hidropônicas, como instrumento de geração de recursos finaceiros para ações de assistência e desenvolvimento social.</string>
-    <string name="nav_semear">Semear</string>
-    <string name="nav_germinar">Germinar</string>
-    <string name="nav_adolescer">Adolescer</string>
-    <string name="nav_engordar">Engordar</string>
     <string name="nav_relatorio">Relatórios</string>
     <string name="nav_grafico">Gráfico Individualizado </string>
     <string name="nav_diasEngorda">Dias na Engorda</string>

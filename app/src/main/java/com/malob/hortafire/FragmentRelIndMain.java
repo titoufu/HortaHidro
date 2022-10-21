@@ -118,7 +118,7 @@ public class FragmentRelIndMain extends Fragment {
                         String dataG = document.getString("Data da Germinação");
                         String dataB = document.getString("Data do Berçário");
                         String dataE = document.getString("Data da Engorda");
-                        HortaHidro hortalica = new HortaHidro(tipoHortalica, tipoLote, dataS, dataG, dataB, dataE, 0);
+                        HortaHidro hortalica = new HortaHidro(tipoHortalica, tipoLote, dataS, dataG, dataB, dataE, 0,0);
                         trataDados(hortalica);
                         flagGrafico = true;
                         Toast.makeText(getContext(), "Dados Recuperados com Sucesso", Toast.LENGTH_SHORT).show();
