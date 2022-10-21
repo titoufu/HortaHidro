@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Fragment fragment = null;
         Intent intent = new Intent();
         switch (id) {
-/*            case R.id.nav_semear:
-                fragment = new Semear()r();
+            case R.id.nav_semear:
+                fragment = new Semear();
                 break;
             case R.id.nav_germinar:
                 fragment = new Germinar();
@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new Engordar();
                 break;
 
- */
             case R.id.nav_diasEngorda:
                 intent = new Intent(this, DiasNaEngorda.class);
                 break;

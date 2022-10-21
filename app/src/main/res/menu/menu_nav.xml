@@ -37,7 +37,6 @@
          </menu>
     </item>
 
-    <!--
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_semear"
@@ -57,6 +56,6 @@
             android:icon="@drawable/fat3"
             android:title="@string/nav_engordar" />
     </group>
--->
+
 
 </menu>

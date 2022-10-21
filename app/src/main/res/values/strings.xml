@@ -2,7 +2,10 @@
     <string name="app_name">MALOB Hidroponia</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="email_do_lar">le.maia.lobato@gmail.com</string>
-
+    <string name="nav_semear">Semear</string>
+    <string name="nav_germinar">Germinar</string>
+    <string name="nav_adolescer">Adolescer</string>
+    <string name="nav_engordar">Engordar</string>
     <string name="rel_geral">Hortaliças em fase Final</string>
     <string name="rel_indiv">Relatório Individual</string>
 
