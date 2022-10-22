@@ -34,28 +34,33 @@
                 android:id="@+id/nav_nutricao"
                 android:icon="@drawable/dieta2"
                 android:title="@string/nav_nutricao" />
-         </menu>
+        </menu>
+    </item>
+    <item android:title="Manejos">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_semear"
+                    android:checked="true"
+                    android:icon="@drawable/icone_semear"
+                    android:title="@string/nav_semear" />
+                <item
+                    android:id="@+id/nav_germinar"
+                    android:icon="@drawable/ic_germinar"
+                    android:title="@string/nav_germinar" />
+                <item
+                    android:id="@+id/nav_adolescer"
+                    android:icon="@drawable/adolescer"
+                    android:title="@string/nav_adolescer" />
+                <item
+                    android:id="@+id/nav_engordar"
+                    android:icon="@drawable/fat3"
+                    android:title="@string/nav_engordar" />
+            </group>
+        </menu>
     </item>
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_semear"
-            android:checked="true"
-            android:icon="@drawable/icone_semear"
-            android:title="@string/nav_semear" />
-        <item
-            android:id="@+id/nav_germinar"
-            android:icon="@drawable/ic_germinar"
-            android:title="@string/nav_germinar" />
-        <item
-            android:id="@+id/nav_adolescer"
-            android:icon="@drawable/adolescer"
-            android:title="@string/nav_adolescer" />
-        <item
-            android:id="@+id/nav_engordar"
-            android:icon="@drawable/fat3"
-            android:title="@string/nav_engordar" />
-    </group>
+
 
 
 </menu>

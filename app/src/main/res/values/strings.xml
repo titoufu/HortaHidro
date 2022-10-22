@@ -1,16 +1,17 @@
 <resources>
     <string name="app_name">MALOB Hidroponia</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="palavra_emmanuel">Assim como a semente traça a forma e o destino da árvore, os teus próprios desejos é que te configuram a vida. (Emmanuel)</string>
     <string name="email_do_lar">le.maia.lobato@gmail.com</string>
     <string name="nav_semear">Semear</string>
     <string name="nav_germinar">Germinar</string>
     <string name="nav_adolescer">Adolescer</string>
     <string name="nav_engordar">Engordar</string>
-    <string name="rel_geral">Hortaliças em fase Final</string>
+    <string name="rel_geral">Hortaliças em Fase Final</string>
     <string name="rel_indiv">Relatório Individual</string>
 
     <string name="eletrocontudividade">Ec [μs/cm]</string>
-    <string name="nossa_missao">Nossa Missão: Contribuir para que o Lar Espírita Maria Lobato de Freitas
+    <string name="nossa_missao">Contribuir para que o Lar Espírita Maria Lobato de Freitas
         cumpra a sua missão, auferindo para isso recursos financeiros por meio da
         produção e comércio de hortaliças hidropônicas.</string>
     <string name="nossa_meta">Ser uma referência em Uberlândia na produção de
@@ -73,5 +74,10 @@
         <item>1.7</item>
         <item>1.8</item>
     </string-array>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_da_germina">DATA DA GERMINAÇÃO:</string>
 
 </resources>

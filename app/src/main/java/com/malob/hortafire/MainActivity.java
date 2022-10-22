@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // implementando o NavigationView
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        Fragment fragment = new Missao();
+        Fragment fragment = new FragmentDeAbertura();
+        setTitle("Malob - Hidroponia");
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.content_frame, fragment);
         ft.commit();
@@ -45,18 +46,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Intent intent = new Intent();
         switch (id) {
             case R.id.nav_semear:
+                setTitle("Data do Plantio (Fase Escura)");
                 fragment = new Semear();
                 break;
             case R.id.nav_germinar:
+                setTitle("Data da Germinação (Fase Clara)");
                 fragment = new Germinar();
                 break;
             case R.id.nav_adolescer:
+                setTitle("Data do Berçário");
                 fragment = new Adolescer();
                 break;
             case R.id.nav_engordar:
+                setTitle("Data da Engorda");
                 fragment = new Engordar();
                 break;
-
             case R.id.nav_diasEngorda:
                 intent = new Intent(this, DiasNaEngorda.class);
                 break;
@@ -78,8 +82,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new Meta();
                 break;
             default:
-                setTitle("Nossa Missão");
-                fragment = new Missao();
+                setTitle("Lar Espírita Maria Lobato - Hidroponia");
+                fragment = new FragmentDeAbertura();
         }
         if (fragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();

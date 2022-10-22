@@ -40,7 +40,9 @@ public class Semear extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         View view = inflater.inflate(R.layout.fragment_semear, container, false);
+
         db = FirebaseFirestore.getInstance();
         datasemear = view.findViewById(R.id.id_dataSemear);
         datagerminar = view.findViewById(R.id.id_dataGerminar);
