@@ -36,6 +36,7 @@
                 android:title="@string/nav_nutricao" />
         </menu>
     </item>
+
     <item android:title="Manejos">
         <menu>
             <group android:checkableBehavior="single">
@@ -59,8 +60,4 @@
             </group>
         </menu>
     </item>
-
-
-
-
 </menu>

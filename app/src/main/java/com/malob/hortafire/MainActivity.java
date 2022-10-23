@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 setTitle("Data da Engorda");
                 fragment = new Engordar();
                 break;
+
             case R.id.nav_diasEngorda:
                 intent = new Intent(this, DiasNaEngorda.class);
                 break;

@@ -4,17 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="10dp"
     app:cardElevation="8dp"
     app:cardPreventCornerOverlap="false">
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginVertical="6dp"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/trepadeira1">
+        android:layout_marginVertical="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="#080C00">
 
         <LinearLayout
             android:layout_width="0dp"
