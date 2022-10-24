@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="70dp"
+    android:layout_height="wrap_content"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         <ImageView
             android:id="@+id/id_image_dias_engorda"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_weight="30"
             android:contentDescription="TODO"
             android:scaleType="centerCrop"
@@ -40,6 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="10"
+                android:textStyle="bold"
                 android:gravity="center_horizontal|center_vertical|end"
                 android:text="Hortaliça:" />
 
@@ -50,6 +51,7 @@
                 android:layout_weight="10"
                 android:gravity="center_horizontal|center_vertical|end"
                 android:padding="3dp"
+                android:textStyle="bold"
                 android:text="Lote:" />
 
             <TextView
@@ -57,6 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="10"
+                android:textStyle="bold"
                 android:gravity="center_horizontal|center_vertical|end"
                 android:text="Dias na Engorda:" />
         </LinearLayout>
@@ -74,6 +77,7 @@
                 android:layout_weight="10"
                 android:gravity="start|center_horizontal|center_vertical"
                 android:paddingStart="5dp"
+                android:textStyle="bold"
                 android:text="Alface" />
 
             <TextView
@@ -83,6 +87,7 @@
                 android:layout_weight="10"
                 android:gravity="start|center_horizontal|center_vertical"
                 android:paddingStart="5dp"
+                android:textStyle="bold"
                 android:text="A" />
 
             <TextView
@@ -92,6 +97,7 @@
                 android:layout_weight="10"
                 android:gravity="start|center_horizontal|center_vertical"
                 android:paddingStart="5dp"
+                android:textStyle="bold"
                 android:text="55" />
         </LinearLayout>
     </LinearLayout>

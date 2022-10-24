@@ -4,24 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="8dp"
+    android:paddingStart="5dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp"
+
     app:cardPreventCornerOverlap="false">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginVertical="4dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
-        android:background="#080C00">
+        android:layout_height="wrap_content"
+        android:background="#F8E2B1">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="10"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_weight="10"
             android:orientation="vertical">
 
             <TextView
@@ -29,62 +28,63 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="Hortaliça:"
-                android:textColor="@color/white"
-                  android:autoSizeTextType="uniform" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="Lote:"
-                android:textColor="@color/white"
-                  android:autoSizeTextType="uniform" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="Data da Semeadura:"
-                android:textColor="@color/white"
-                  android:autoSizeTextType="uniform" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="Data da Germinação:"
-                android:textColor="@color/white"
-                  android:autoSizeTextType="uniform"/>
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="Data do Berçário:"
-                android:textColor="@color/white"
-                  android:autoSizeTextType="uniform"/>
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="Data da Engorda:"
-                android:textColor="@color/white"
-                  android:autoSizeTextType="uniform" />
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="10"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_weight="10"
             android:orientation="vertical">
 
             <TextView
@@ -93,9 +93,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="12/12/2022"
-                android:textColor="@color/white"
-                android:autoSizeTextType="uniform" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/id_tipoL"
@@ -103,9 +103,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="A"
-                android:textColor="@color/white"
-                android:autoSizeTextType="uniform"/>
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/id_dataS"
@@ -113,9 +113,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="12/12/2012"
-                android:textColor="@color/white"
-                android:autoSizeTextType="uniform" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/id_dataG"
@@ -123,9 +123,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="12/12/2012"
-                android:textColor="@color/white"
-                  android:autoSizeTextType="uniform" />
+                android:textColor="@color/black" />
 
 
             <TextView
@@ -134,9 +134,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="12/12/2012"
-                android:textColor="@color/white"
-                  android:autoSizeTextType="uniform" />
+                android:textColor="@color/black" />
 
 
             <TextView
@@ -145,9 +145,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
                 android:text="12/12/2012"
-                android:textColor="@color/white"
-                  android:autoSizeTextType="uniform" />
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
