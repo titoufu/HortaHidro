@@ -29,7 +29,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Engordar extends Fragment {
+public class FragmentEngordar extends Fragment {
     String date = "??/??/????";
     private static String tipoHortalica = "Alface", tipoLote = "A";
     TextView datasemear, datagerminar, databerco, dataengorda;

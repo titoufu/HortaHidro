@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.content_frame, fragment);
         ft.commit();
+
+
     }
 
     @Override
@@ -47,19 +49,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (id) {
             case R.id.nav_semear:
                 setTitle("Data do Plantio (Fase Escura)");
-                fragment = new Semear();
+                fragment = new FragmentSemear();
                 break;
             case R.id.nav_germinar:
                 setTitle("Data da Germinação (Fase Clara)");
-                fragment = new Germinar();
+                fragment = new FragmentGerminar();
                 break;
             case R.id.nav_adolescer:
                 setTitle("Data do Berçário");
-                fragment = new Adolescer();
+                fragment = new FragmentAdolescer();
                 break;
             case R.id.nav_engordar:
                 setTitle("Data da Engorda");
-                fragment = new Engordar();
+                fragment = new FragmentEngordar();
                 break;
 
             case R.id.nav_diasEngorda:
@@ -76,11 +78,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_missao:
                 setTitle("Nossa Missão");
-                fragment = new Missao();
+                fragment = new FragmentMissao();
                 break;
             case R.id.nav_meta:
                 setTitle("Nossa Meta");
-                fragment = new Meta();
+                fragment = new FragmentMeta();
+                break;
+            case R.id.nav_login:
+                setTitle("Login");
+                intent = new Intent(this, LoginActivity.class);
                 break;
             default:
                 setTitle("Lar Espírita Maria Lobato - Hidroponia");

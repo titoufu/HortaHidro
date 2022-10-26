@@ -29,8 +29,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
-
-public class Germinar extends Fragment {
+public class FragmentSemear extends Fragment {
     String date = "??/??/????";
     private static String tipoHortalica = "Alface", tipoLote = "A";
     TextView datasemear, datagerminar, databerco, dataengorda;
@@ -41,13 +40,15 @@ public class Germinar extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View view = inflater.inflate(R.layout.fragment_germinar, container, false);
-        db = FirebaseFirestore.getInstance();
 
+        View view = inflater.inflate(R.layout.fragment_semear, container, false);
+
+        db = FirebaseFirestore.getInstance();
         datasemear = view.findViewById(R.id.id_dataSemear);
         datagerminar = view.findViewById(R.id.id_dataGerminar);
         databerco = view.findViewById(R.id.id_dataBerco);
         dataengorda = view.findViewById(R.id.id_dataEngorda);
+
         Spinner spinnerHortalica = (Spinner) view.findViewById(R.id.id_spinnerHortalica);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(requireActivity(), R.array.Hortalica, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -90,7 +91,8 @@ public class Germinar extends Fragment {
                     public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                         monthOfYear = monthOfYear + 1;
                         date = dayOfMonth + "/" + monthOfYear + "/" + year;
-                        datagerminar.setText(date);
+                        datasemear.setText(date);
+                        datagerminar.setText("DD/MM/AAAA");
                         databerco.setText("DD/MM/AAAA");
                         dataengorda.setText("DD/MM/AAAA");
                     }
@@ -112,7 +114,7 @@ public class Germinar extends Fragment {
         lote.put("Data da Germinação", datagerminar.getText());
         lote.put("Data do Berçário", databerco.getText());
         lote.put("Data da Engorda", dataengorda.getText());
-        db.collection(tipoHortalica).document("Lote: " + tipoLote)
+        db.collection(tipoHortalica).document("Lote: "+tipoLote)
                 .set(lote)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -130,7 +132,7 @@ public class Germinar extends Fragment {
     }
 
     private void recuperaDados(String tipoHortalica, String tipoLote) {
-        DocumentReference docRef = db.collection(tipoHortalica).document("Lote: " + tipoLote);
+        DocumentReference docRef = db.collection(tipoHortalica).document("Lote: "+tipoLote);
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
@@ -146,10 +148,9 @@ public class Germinar extends Fragment {
                         databerco.setText(dataB);
                         dataengorda.setText(dataE);
                         Toast.makeText(getContext(), "Dados Recuperados com Sucesso", Toast.LENGTH_SHORT).show();
-
-                        Log.d("TAG", dataS + "  " + dataG + "  " + dataB + "  " + dataE);
+                        // Log.d("TAG",dataSemear+"  "+dataGerminar+"  "+dataBerco+"  "+ dataEngordar);
                     } else {
-                        Toast.makeText(getContext(), "Erro na leitura (Lote não cadastrado)", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Erro na leitura ( Lote não cadastrado)", Toast.LENGTH_SHORT).show();
                         datasemear.setText("DD/MM/AAAA");
                         datagerminar.setText("DD/MM/AAAA");
                         databerco.setText("DD/MM/AAAA");

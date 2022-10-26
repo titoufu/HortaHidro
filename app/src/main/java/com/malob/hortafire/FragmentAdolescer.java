@@ -30,7 +30,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class Adolescer extends Fragment {
+public class FragmentAdolescer extends Fragment {
     String date = "??/??/????";
     private static String tipoHortalica = "Alface", tipoLote = "A";
     TextView datasemear, datagerminar, databerco, dataengorda;

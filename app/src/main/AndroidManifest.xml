@@ -14,10 +14,17 @@
         android:theme="@style/Theme.HortaFire"
         tools:targetApi="31">
         <activity
-            android:name=".Hortinutri"
-            android:label="Controle Nutricional"
-            android:parentActivityName=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".Hortinutri"
+            android:exported="false"
+            android:label="Controle Nutricional"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DatasDosEventos"
             android:exported="false"
@@ -36,6 +43,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
