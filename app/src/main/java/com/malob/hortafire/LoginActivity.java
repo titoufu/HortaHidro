@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Sucesso ao entrar !", Toast.LENGTH_SHORT).show();
-                    TelaPrincipal();
+                    TelaPrincipal() ;
                 } else {
                     Toast.makeText(getApplicationContext(), "Erro ao acessar !", Toast.LENGTH_SHORT).show();
                 }
