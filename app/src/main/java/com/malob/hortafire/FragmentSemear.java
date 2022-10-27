@@ -1,5 +1,6 @@
 package com.malob.hortafire;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -21,6 +22,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -42,7 +45,7 @@ public class FragmentSemear extends Fragment {
         super.onCreate(savedInstanceState);
 
         View view = inflater.inflate(R.layout.fragment_semear, container, false);
-
+        verificaLogin();
         db = FirebaseFirestore.getInstance();
         datasemear = view.findViewById(R.id.id_dataSemear);
         datagerminar = view.findViewById(R.id.id_dataGerminar);
@@ -107,6 +110,14 @@ public class FragmentSemear extends Fragment {
         return view;
     }
 
+    private void verificaLogin() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user == null) {
+            Intent intent = new Intent(getContext(), LoginActivity.class);
+            startActivity(intent);
+        }
+    }
+
     private void salvarDados() {
 
         Map<String, Object> lote = new HashMap<>();
@@ -114,12 +125,13 @@ public class FragmentSemear extends Fragment {
         lote.put("Data da Germinação", datagerminar.getText());
         lote.put("Data do Berçário", databerco.getText());
         lote.put("Data da Engorda", dataengorda.getText());
-        db.collection(tipoHortalica).document("Lote: "+tipoLote)
+        db.collection(tipoHortalica).document("Lote: " + tipoLote)
                 .set(lote)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getContext(), "Dados Salvos com Sucesso", Toast.LENGTH_SHORT).show();
+                        FirebaseAuth.getInstance().signOut();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
@@ -132,7 +144,7 @@ public class FragmentSemear extends Fragment {
     }
 
     private void recuperaDados(String tipoHortalica, String tipoLote) {
-        DocumentReference docRef = db.collection(tipoHortalica).document("Lote: "+tipoLote);
+        DocumentReference docRef = db.collection(tipoHortalica).document("Lote: " + tipoLote);
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {

@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -37,9 +38,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.content_frame, fragment);
         ft.commit();
-
-
     }
+
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -83,10 +83,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_meta:
                 setTitle("Nossa Meta");
                 fragment = new FragmentMeta();
-                break;
-            case R.id.nav_login:
-                setTitle("Login");
-                intent = new Intent(this, LoginActivity.class);
                 break;
             default:
                 setTitle("Lar Espírita Maria Lobato - Hidroponia");

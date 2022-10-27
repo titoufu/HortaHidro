@@ -1,5 +1,6 @@
 package com.malob.hortafire;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -21,6 +22,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -41,6 +44,7 @@ public class FragmentEngordar extends Fragment {
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_engordar, container, false);
+        verificaLogin();
         db = FirebaseFirestore.getInstance();
 
         datasemear = view.findViewById(R.id.id_dataSemear);
@@ -105,6 +109,13 @@ public class FragmentEngordar extends Fragment {
         });
         return view;
     }
+    private void verificaLogin() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user == null) {
+            Intent intent = new Intent(getContext(), LoginActivity.class);
+            startActivity(intent);
+        }
+    }
     private void salvarDados() {
 
         Map<String, Object> lote = new HashMap<>();
@@ -118,6 +129,7 @@ public class FragmentEngordar extends Fragment {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getContext(), "Dados Salvos com Sucesso", Toast.LENGTH_SHORT).show();
+                        FirebaseAuth.getInstance().signOut();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
@@ -126,7 +138,6 @@ public class FragmentEngordar extends Fragment {
                         Toast.makeText(getContext(), "Erro ao gravar os dados", Toast.LENGTH_SHORT).show();
                     }
                 });
-
     }
 
     private void recuperaDados(String tipoHortalica, String tipoLote) {

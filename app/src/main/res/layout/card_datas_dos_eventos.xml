@@ -18,14 +18,14 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="140dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="10"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"
@@ -34,7 +34,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"
@@ -43,7 +43,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"
@@ -52,7 +52,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"
@@ -61,7 +61,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"
@@ -70,7 +70,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
@@ -82,7 +82,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="140dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="10"
             android:orientation="vertical">
@@ -90,17 +90,18 @@
             <TextView
                 android:id="@+id/id_tipoH"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
+                android:layout_gravity="start"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"
-                android:text="12/12/2022"
+                android:text="Hortaliça:"
                 android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/id_tipoL"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"
@@ -110,7 +111,7 @@
             <TextView
                 android:id="@+id/id_dataS"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"
@@ -120,7 +121,7 @@
             <TextView
                 android:id="@+id/id_dataG"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"
@@ -131,7 +132,7 @@
             <TextView
                 android:id="@+id/id_dataB"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"
@@ -142,7 +143,7 @@
             <TextView
                 android:id="@+id/id_dataE"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
                 android:autoSizeTextType="uniform"

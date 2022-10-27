@@ -54,10 +54,11 @@ public class AdapterDatasDosEventos extends RecyclerView.Adapter<AdapterDatasDos
             tipoHorta = itemView.findViewById(R.id.id_tipoH);
             tipoLote = itemView.findViewById(R.id.id_tipoL);
             dataS = itemView.findViewById(R.id.id_dataS);
-            dataG = itemView.findViewById(R.id.id_dataB);
-            dataB = itemView.findViewById(R.id.id_dataG);
+            dataG = itemView.findViewById(R.id.id_dataG);
+            dataB = itemView.findViewById(R.id.id_dataB);
             dataE = itemView.findViewById(R.id.id_dataE);
 
         }
     }
 }
+
