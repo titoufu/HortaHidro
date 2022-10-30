@@ -124,7 +124,7 @@ public class Hortinutri extends AppCompatActivity {
             fatorAjuste = Double.parseDouble(df.format(correcao));
             for (int i = 0; i <= 2; i++) {
                 alfaceVetor[i] = alfaceVetor[i] * fatorAjuste * capLitros / 1000.0;
-                resulVector[i] = String.format("%.2f", alfaceVetor[i]);
+                resulVector[i] = String.format("%.0f", alfaceVetor[i]);
             }
         } else if (tipoHortalica.equals("Tomate")) {
             ref = 2.5;
@@ -132,7 +132,7 @@ public class Hortinutri extends AppCompatActivity {
             fatorAjuste = Double.parseDouble(df.format(correcao));
             for (int i = 0; i <= 2; i++) {
                 tomateVector[i] = tomateVector[i] * fatorAjuste * capLitros / 1000.0;
-                resulVector[i] = String.format("%.2f", tomateVector[i]);
+                resulVector[i] = String.format("%.0f", tomateVector[i]);
             }
         } else {
             ref = 1.7;
@@ -140,7 +140,7 @@ public class Hortinutri extends AppCompatActivity {
             fatorAjuste = Double.parseDouble(df.format(correcao));
             for (int i = 0; i <= 2; i++) {
                 salsaVector[i] = salsaVector[i] * fatorAjuste * capLitros / 1000.0;
-                resulVector[i] = String.format("%.2f", salsaVector[i]);
+                resulVector[i] = String.format("%.0f", salsaVector[i]);
             }
         }
         nutri1valor.setText(resulVector[0]);

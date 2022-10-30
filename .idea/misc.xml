@@ -51,6 +51,7 @@
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFire/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.323" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/drawable-v24/button_background.xml" value="0.3575" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/drawable-v24/edit_text_background.xml" value="0.235" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/drawable-v24/retangulo.xml" value="0.137" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/layout-w936dp/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/layout/activity_datas_dos_eventos.xml" value="0.3625" />
@@ -69,6 +70,8 @@
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/layout/fragment_germinar.xml" value="0.3625" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/layout/fragment_missao.xml" value="0.3625" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/layout/fragment_semear.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/layout/spinner_item.xml" value="0.3625" />
+        <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/layout/toolbar_main.xml" value="0.3625" />
         <entry key="..\:/Users/jribe/OneDrive/MALOB_GESTAO/Hidroponia/HortaFireFull/app/src/main/res/menu/menu_nav.xml" value="0.3625" />
       </map>
     </option>
