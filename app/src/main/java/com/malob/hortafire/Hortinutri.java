@@ -48,7 +48,7 @@ public class Hortinutri extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 ////
         ArrayAdapter<CharSequence> adapterCap = ArrayAdapter.createFromResource(this, R.array.Capacidade, R.layout.spinner_item);
-        adapterCap.setDropDownViewResource(android.R.layout.select_dialog_singlechoice);
+        adapterCap.setDropDownViewResource(R.layout.spinner_item_drop);
         spinCap.getBackground().setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
         spinCap.setAdapter(adapterCap);
         spinCap.setSelection(3);
@@ -70,7 +70,7 @@ public class Hortinutri extends AppCompatActivity {
 
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Hortalica, R.layout.spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.select_dialog_singlechoice);
+        adapter.setDropDownViewResource(R.layout.spinner_item_drop);
         spiHortalica.getBackground().setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
         spiHortalica.setAdapter(adapter);
         spiHortalica.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -88,7 +88,7 @@ public class Hortinutri extends AppCompatActivity {
         });
 
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.EcMedido, R.layout.spinner_item);
-        adapter1.setDropDownViewResource(android.R.layout.select_dialog_singlechoice);
+        adapter1.setDropDownViewResource(R.layout.spinner_item_drop);
         spiValorMedido.getBackground().setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
         spiValorMedido.setAdapter(adapter1);
         spiValorMedido.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
